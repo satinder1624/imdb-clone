@@ -1,0 +1,67 @@
+.oneBigCardContainer{
+    display: flex;
+    justify-content: space-between;
+    gap:0.5rem;
+}
+
+.featureVideoCard{
+    position: relative;
+    cursor: pointer;
+    width: fit-content;
+}
+
+.featureVideoCard:hover .iconText{
+    color: var(--logoColor);
+    transition: all 0.3s;
+}
+
+.featureVideoCard:hover::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(198deg, var(--lightBlack) 0%, rgba(0, 0, 0, 0) 50%);
+}
+
+.iconText{
+    position: absolute;
+    bottom: 50px;
+    /* bottom: 3.5rem; */
+    display: flex;
+    align-items: center;
+    gap:0.2rem;
+    padding: 0 0rem 0.5rem 1rem;
+}
+
+.resImageContainer{
+    width: auto;
+    height: auto;
+}
+
+.featureVideoText{
+    display: flex;
+    text-align: left;
+    padding: 0.5rem;
+}
+
+.featureVideoText > span{
+    /* Turncate line text to max 2 lines */
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    display: -webkit-box;
+}
+
+@media (max-width: 600px) {
+    .oneBigCardContainer {
+        flex-direction: column;
+    }
+    .iconText {
+        /* bottom: 2rem; */
+    }
+}
+
+@media (max-width: 400px) {
+    /* .iconText {
+        bottom: 2.5rem;
+    } */
+}

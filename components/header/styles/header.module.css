@@ -1,0 +1,157 @@
+.headerSection{
+    background: var(--lightBlack);
+    padding:0.8rem 0;
+}
+
+.headerContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.IconContainer{
+    display: flex;
+    align-items: center;
+    gap: 0.1rem;
+}
+
+.responsiveMenuIcon,
+.responsiveSearchIcon{
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.IconContainer,
+.headerProContainer,
+.signInContainer,
+.languageContainer{
+    cursor: pointer;
+    border-radius: 4px;
+    padding: 2px 10px;
+}
+
+.headerProContainer,
+.signInContainer,
+.languageContainer {
+    padding: 5px 10px;
+}
+
+.IconContainer:hover,
+.headerProContainer:hover,
+.signInContainer:hover,
+.languageContainer:hover,
+.responsiveMenuIcon:hover,
+.responsiveSearchIcon:hover{
+    background-color: var(--hoverLightBlack);
+}
+
+.IconContainer > span{
+    color:var(--white);
+    /* font-size: 13.5px; */
+}
+
+.icon{
+    color: var(--lightGrey);
+}
+
+.headerSearchContainer{
+    display: flex;
+    background-color: var(--white);
+    width: 25%;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border-radius: 5px;
+    height: 30px;
+}
+
+.headerSearch{
+    display: flex;
+    align-items: center;
+    flex: 1;
+    padding: 0 5px;
+}
+
+.headerSearch > input{
+    border: none;
+    outline: none;
+    width: 100%;
+}
+
+.headerSearch>input::placeholder,.searchIcon{
+    color: rgba(0, 0, 0, 0.61);
+}
+
+.headerDropdownAll{
+    display: flex;
+    align-items: center;
+    padding-left:10px;
+    border-right: 1px solid black;
+}
+
+.headerDropdownAll > span{
+    color: var(--lightBlack);
+}
+
+
+.headerProSpan{
+    color: var(--blue) !important;
+}
+
+.verticalLine{
+    background-color: var(--lightGrey);
+    width: 1px;
+    height: 25px;
+}
+
+.responsiveMenuIcon{
+    display: none;
+    margin-top: 2px
+}
+
+.responsiveSearchIcon {
+    display: none;
+    color: var(--white);
+    margin-top: 2px
+}
+
+@media only screen and (max-width: 907px) {
+    .headerContainer {
+        gap: 0.5rem;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .headerProContainer,
+    .IconContainer {
+        display: none;
+    }
+
+    .headerSearchContainer{
+        width: 50%;
+    }
+
+    .responsiveMenuIcon {
+        display: flex;
+    }
+}
+
+@media only screen and (max-width: 585px) {
+    .headerContainer {
+        gap:0.3rem;
+    }
+}
+
+
+@media only screen and (max-width: 473px) {
+    .headerSearchContainer {
+        display: none;
+    }
+    .headerContainer{
+        justify-content: space-evenly;
+        gap: 1rem;
+    }
+    .responsiveSearchIcon {
+        display: flex;
+    }
+}
+

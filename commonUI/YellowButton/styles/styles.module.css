@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&family=Roboto:wght@900&family=Ubuntu:wght@300&display=swap');
+
+.logoContainer {
+    background: var(--logoColor);
+    width: fit-content;
+    padding: 2px 7px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.logoText {
+    font-weight: bold;
+    font-size: 1.4em;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+}

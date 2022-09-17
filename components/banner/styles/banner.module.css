@@ -1,0 +1,6 @@
+.bannerImagesContainer{
+    display: flex;
+    justify-content: center;
+    /* background: linear-gradient(to top,rgba(0, 0, 0, 0.973),black); */
+    background: linear-gradient(to top,rgba(0, 0, 0, 0.973),black,black,rgba(0, 0, 0, 0.973));
+}
