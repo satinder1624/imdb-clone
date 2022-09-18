@@ -32,7 +32,7 @@ export default function IndividualList({
   let isAddedToWatchList = watchListMovie?.[0]?.addedMovieId === id;
   // Grabing ID
   let addedMovieDocID = watchListMovie?.[0]?.docId;
-  console.log(watchListMovie);
+  // console.log(watchListMovie);
   // console.log(condition);
 
   // console.log(docID);

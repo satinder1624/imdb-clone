@@ -40,8 +40,9 @@ export default function Header() {
     <section className={styles.headerSection}>
       <div className={styles.headerContainer}>
         {/* Mobile Responsive Menu */}
-        <div>
-          <MenuIcon className={`${styles.icon} ${styles.responsiveMenuIcon}`} />
+        <div className={styles.responsiveMenuIcon}>
+          {/* <MenuIcon className={`${styles.icon} ${styles.responsiveMenuIcon}`} /> */}
+          <MenuIcon className={styles.icon} />
         </div>
         {/* logo */}
         <Logo />

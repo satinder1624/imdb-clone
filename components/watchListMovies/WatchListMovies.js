@@ -12,7 +12,7 @@ export default function WatchListMovies() {
     getMoviesFromWatchList(session?.user?.email, setAddedMovieResult);
   }, [session?.user]);
 
-  console.log(addedMoviesResult);
+  // console.log(addedMoviesResult);
 
   return (
     <div className={styles.container}>

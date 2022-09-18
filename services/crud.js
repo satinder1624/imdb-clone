@@ -10,7 +10,7 @@ export function updateDB(path, doc, value) {
 }
 
 export function deleteDB(path, doc) {
-  console.log("Deleted");
+  // console.log("Deleted");
   return db.collection(path).doc(doc).delete();
 }
 
