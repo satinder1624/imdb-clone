@@ -15,22 +15,22 @@ export default function WatchList() {
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
       items: 5,
-      slidesToSlide: 5, // optional, default to 1.
+      slidesToSlide: 5,
     },
     tablet: {
       breakpoint: { max: 1024, min: 558 },
       items: 4,
-      slidesToSlide: 4, // optional, default to 1.
+      slidesToSlide: 4,
     },
     tablet2: {
       breakpoint: { max: 768, min: 558 },
       items: 3,
-      slidesToSlide: 3, // optional, default to 1.
+      slidesToSlide: 3,
     },
     mobile: {
       breakpoint: { max: 558, min: 320 },
       items: 2,
-      slidesToSlide: 2, // optional, default to 1.
+      slidesToSlide: 2,
     },
   };
 
@@ -148,9 +148,6 @@ export default function WatchList() {
             posterImage={movie.posterImage}
             rating={movie.rating}
             filmName={movie.filmName}
-            // condition={addedMoviesResult?.some(
-            //   (value) => value.addedMovieId == movie.id
-            // )}
             watchListMovie={addedMoviesResult?.filter(function value(v) {
               return v.addedMovieId == movie.id;
             })}

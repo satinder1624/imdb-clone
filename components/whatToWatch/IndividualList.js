@@ -67,6 +67,16 @@ export default function IndividualList({
     );
   };
 
+  const handler = (e) => {
+    e.preventDefault();
+
+    !session
+      ? alert("Please Sign in to access watchlist feature")
+      : !isAddedToWatchList
+      ? addToWatchList()
+      : deleteFromWatchList();
+  };
+
   return (
     <div className={styles.container}>
       <div className={styles.OneCard}>
@@ -93,10 +103,7 @@ export default function IndividualList({
             <span>{filmName}</span>
           </div>
           {/* WatchList */}
-          <div
-            onClick={!isAddedToWatchList ? addToWatchList : deleteFromWatchList}
-            className={styles.watchListButton}
-          >
+          <div onClick={handler} className={styles.watchListButton}>
             {isAddedToWatchList ? (
               <>
                 <DoneIcon className={styles.addIcon} />

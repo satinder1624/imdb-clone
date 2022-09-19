@@ -85,9 +85,11 @@ export default function Header() {
 
         {/* Watchlist */}
         <Link href="/watchlist/">
-          <div className={styles.IconContainer}>
+          <div
+            className={`${styles.IconContainer} ${styles.responsiveWatchListContainer}`}
+          >
             <BookmarkAddIcon className={styles.icon} />
-            <span>Watchlist</span>
+            <span className={styles.watchListText}>Watchlist</span>
           </div>
         </Link>
 

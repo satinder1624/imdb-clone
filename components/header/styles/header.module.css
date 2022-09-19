@@ -103,6 +103,8 @@
     height: 25px;
 }
 
+
+
 .responsiveMenuIcon{
     display: none;
     margin-top: 2px
@@ -122,7 +124,16 @@
 
 @media only screen and (max-width: 750px) {
     .headerProContainer,
-    .IconContainer {
+    .IconContainer,
+    .languageContainer {
+        display: none;
+    }
+
+    .responsiveWatchListContainer{
+        display: flex;
+    }
+
+    .watchListText{
         display: none;
     }
 
