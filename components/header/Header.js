@@ -68,10 +68,8 @@ export default function Header() {
         </div>
 
         {/* Mobile Responsive Search */}
-        <div>
-          <SearchIcon
-            className={`${styles.searchIcon} ${styles.responsiveSearchIcon}`}
-          />
+        <div className={styles.responsiveSearchIcon}>
+          <SearchIcon className={styles.searchIcon} />
         </div>
 
         {/* IMDb Pro */}
